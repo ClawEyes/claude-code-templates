@@ -1,17 +1,8 @@
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
-import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   output: 'static',
   base: '/claude-code-templates/',
-  site: 'https://username.github.io/claude-code-templates/',
-  integrations: [react()],
-  vite: {
-    plugins: [tailwindcss()],
-    resolve: {
-      dedupe: ['react', 'react-dom'],
-    },
-  },
+  site: 'https://nexforgecom.github.io/claude-code-templates/',
   trailingSlash: 'always',
 });
