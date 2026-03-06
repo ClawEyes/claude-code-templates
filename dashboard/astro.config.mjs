@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   output: 'static',
-  base: '/claude-code-templates/',
-  site: 'https://nexforgecom.github.io/claude-code-templates/',
+  base: '/dashboard',
   trailingSlash: 'always',
 });
