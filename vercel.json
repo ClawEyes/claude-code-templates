@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd dashboard && npm install && npm run build && cp -r dist ../docs/dashboard",
+  "buildCommand": "npm run build",
   "outputDirectory": "docs",
   "headers": [
     {
@@ -28,10 +28,6 @@
     }
   ],
   "rewrites": [
-    {
-      "source": "/dashboard/:path*",
-      "destination": "/dashboard/:path*"
-    },
     {
       "source": "/",
       "destination": "/index.html"
